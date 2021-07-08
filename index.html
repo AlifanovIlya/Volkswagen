@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Оценка сервисного обслуживания</title>
+	<link rel="icon" href="img/Logo_Volkswagen.png">
+	<link href="main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+	<form id="form">
+
+				<div class="contain_1" id="first">
+
+				   <div class="text_first">
+				      <p>
+				         Оцените сервисное обслуживание
+				      </p>
+				   </div>   
+
+			        <div class="all_smiles">
+				      <p>
+				         <div>
+			                  <input id="checkbox1" type="radio" name="opinion" value="Отлично" hidden>
+			                  <label for="checkbox1"><img src="img/smile_1.svg" class="smile1"></label>
+			             </div>
+			          </p>  
+
+			          <p>
+				         <div>
+			                 <input id="checkbox2" type="radio" name="opinion" value="Средне" hidden>
+			                 <label for="checkbox2"><img src="img/smile_2.svg" class="smile2"></label>
+			             </div>
+			          </p> 
+
+			          <p>
+				         <div>
+			                 <input id="checkbox3" type="radio" name="opinion" value="Плохо" hidden>
+			                 <label for="checkbox3"><img src="img/smile_3.svg" class="smile3"></label>
+			             </div>
+			          </p> 
+			       </div>
+			   </div>
+
+			   <div class="contain_2" id="second">
+
+				   <div class="poll">
+					
+					      <div class="text_second">
+						      Как Вас зовут?<label class="star">*</label>					
+					      </div>
+
+					      <div >
+						      <input class="textbox1" type="textbox" id="name" name="name"><br>
+						      <label class="error" for="name" id="name_error">Введите имя.</label>	
+					      </div>
+
+					      <div class="text_second">
+						      Ваш телефон?<label class="star">*</label>
+					      </div>
+
+					      <div>			
+						      <input class="textbox2" type="textbox" id="phone" name="phone"><br>
+						      <label class="error" for="phone" id="phone_error">Введите номер телефона.</label>
+					      </div>
+
+					      <div class="text_second">
+						      Оставьте, пожалуйста, отзыв					
+					      </div>
+
+					      <div >
+						      <textarea class="textbox3" id="message" name="message"></textarea>
+					      </div>
+
+					      <div class="div_button" id="button">
+						      <a href="#third"><button id="button" class="button" type="submit" name="button">Отправить</button></a>
+					      </div>
+
+				   </div>
+
+				</div>
+
+	</form>			
+
+	<div class="contain_3" id="third">
+
+	   <div class="snk">
+	      <p>
+		      Спасибо за Ваш отзыв!
+	      </p>
+
+	   	   <img class="last_pic" src="img/Logo_Volkswagen.jpg">
+
+	   </div>
+
+	</div>
+
+   <script type="text/javascript" src="javascript/jquery.min.js"></script>
+   <script type="text/javascript" src="javascript/http://code.jquery.com/jquery-1.7.2.min.js"></script>
+   <script type="text/javascript" src="javascript/http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+   <script type="text/javascript" src="javascript/transition.js"></script>
+   <script type="text/javascript" src="javascript/jquery.mask.min.js"></script>
+   <script type="text/javascript" src="javascript/error.js"></script>
+   <script type="text/javascript" src="javascript/send.js"></script>
+
+   <script>
+      jQuery(function($) {
+       $("#phone").mask("+7(000)000-00-00", {
+         placeholder: "+7(___)___-__-__",
+        });
+      });
+    </script>
+
+</body>
+</html>
