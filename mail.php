@@ -13,16 +13,16 @@ $message = $_POST['message'];
         $mail->CharSet = 'UTF-8';
         $mail->Host = 'smtp.mail.ru';
         $mail->SMTPAuth = true;
-        $mail->Username = 'vlkwg@mail.ru'; //login
-        $mail->Password = 'limon5639'; //password
+        $mail->Username = ''; //login
+        $mail->Password = ''; //password
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
         $mail->setFrom('vlkwg@mail.ru'); 
-        $mail->addAddress("AlIxAnOv.0_0@mail.ru");
-        //$mail->addAddress("parfirev.a.p@gmail.com");
-        //$mail->addAddress("yurchik624@mail.ru");
-        //$mail->addAddress("timur.gafarov@germanika.ru");
-        //$mail->addAddress("sergey.lebedev@germanika.ru");   //куда 
+        $mail->addAddress("");
+        //$mail->addAddress("");
+        //$mail->addAddress("");
+        //$mail->addAddress("");
+        //$mail->addAddress("");   //куда 
         $mail->isHTML(true);
         $mail->Subject = 'Оценка обслуживания'; 
         $mail->Body = " 
